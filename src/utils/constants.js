@@ -1,5 +1,5 @@
 let constants = {}
-constants.organization = 'poanetwork'
+constants.organization = 'DeepitAG'
 constants.repoName = 'poa-chain-spec'
 constants.addressesSourceFile = 'contracts.json'
 constants.ABIsSources = {
@@ -55,6 +55,7 @@ constants.SOKOL = 'sokol'
 constants.CORE = 'core'
 constants.DAI = 'dai'
 constants.KOVAN = 'kovan'
+constants.DCHAIN = 'dchain'
 
 constants.NETWORKS = {
   '42': {
@@ -79,6 +80,12 @@ constants.NETWORKS = {
     NAME: 'Dai',
     RPC: 'https://dai.poa.network',
     BRANCH: constants.DAI,
+    TESTNET: false
+  },
+  '192': {
+    NAME: 'Dchain',
+    RPC: 'http://bootnode-balancer-397837162.us-east-1.elb.amazonaws.com',
+    BRANCH: constants.DCHAIN,
     TESTNET: false
   }
 }
